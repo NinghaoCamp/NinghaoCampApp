@@ -8,7 +8,7 @@ import zhCN from './locales/zh-CN';
 import ptPT from './locales/pt-PT';
 
 I18n.fallbacks = true;
-I18n.defaultLocale = 'en';
+I18n.defaultLocale = 'zh-CN';
 
 I18n.translations = {
 	en, ru, 'pt-BR': ptBR, 'zh-CN': zhCN, fr, de, 'pt-PT': ptPT
