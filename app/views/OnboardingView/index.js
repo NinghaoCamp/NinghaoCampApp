@@ -150,14 +150,6 @@ export default class OnboardingView extends LoggedView {
 						testID='connect-server-button'
 					/>
 					<Button
-						type='secondary'
-						title={I18n.t('Join_the_community')}
-						subtitle='open.rocket.chat'
-						icon={<Image source={{ uri: 'logo_onboarding' }} style={{ width: 32, height: 27 }} fadeDuration={0} />}
-						onPress={this.joinCommunity}
-						testID='join-community-button'
-					/>
-					<Button
 						type='primary'
 						title={I18n.t('Create_a_new_workspace')}
 						icon={<CustomIcon name='plus' size={30} color={COLOR_WHITE} />}
