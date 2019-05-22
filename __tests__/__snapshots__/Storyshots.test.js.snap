@@ -8019,6 +8019,8 @@ exports[`Storyshots Message list 1`] = `
                   }
                 >
                   00:00
+                   / 
+                  00:00
                 </Text>
               </View>
               <View
@@ -8401,6 +8403,8 @@ exports[`Storyshots Message list 1`] = `
                   }
                 >
                   00:00
+                   / 
+                  00:00
                 </Text>
               </View>
               <View
@@ -8681,6 +8685,8 @@ exports[`Storyshots Message list 1`] = `
                   }
                 >
                   00:00
+                   / 
+                  00:00
                 </Text>
               </View>
             </View>
@@ -8927,6 +8933,8 @@ exports[`Storyshots Message list 1`] = `
                     }
                   }
                 >
+                  00:00
+                   / 
                   00:00
                 </Text>
               </View>

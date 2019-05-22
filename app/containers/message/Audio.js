@@ -143,6 +143,11 @@ export default class Audio extends React.Component {
 		return formatTime(duration);
 	}
 
+	get currentTime() {
+		const { currentTime } = this.state;
+		return formatTime(currentTime);
+	}
+
 	setRef = ref => this.player = ref;
 
 	togglePlayPause = () => {
@@ -150,7 +155,10 @@ export default class Audio extends React.Component {
 		this.setState({ paused: !paused });
 	}
 
-	onValueChange = value => this.setState({ currentTime: value });
+	onValueChange = (value) => {
+		this.player.seek(value);
+		this.setState({ currentTime: value });
+	};
 
 	render() {
 		const {
@@ -191,7 +199,7 @@ export default class Audio extends React.Component {
 						thumbStyle={styles.thumbStyle}
 						trackStyle={styles.trackStyle}
 					/>
-					<Text style={styles.duration}>{this.duration}</Text>
+					<Text style={styles.duration}>{this.currentTime} / {this.duration}</Text>
 				</View>
 				<Markdown msg={description} baseUrl={baseUrl} username={user.username} getCustomEmoji={getCustomEmoji} useMarkdown={useMarkdown} />
 			</React.Fragment>
