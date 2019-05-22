@@ -104,11 +104,11 @@ export default class OnboardingView extends LoggedView {
 	}
 
 	joinCommunity = () => {
-		this.newServer('https://open.rocket.chat');
+		this.newServer('https://ninghao.net/signup');
 	}
 
 	createWorkspace = () => {
-		openLink('https://cloud.rocket.chat/trial');
+		openLink('https://ninghao.net/signup');
 	}
 
 	renderClose = () => {
