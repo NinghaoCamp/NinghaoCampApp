@@ -2,7 +2,7 @@ import { isIOS } from '../utils/deviceInfo';
 
 export const COLOR_DANGER = '#f5455c';
 export const COLOR_SUCCESS = '#2de0a5';
-export const COLOR_PRIMARY = '#1d74f5';
+export const COLOR_PRIMARY = '#000000';
 export const COLOR_WHITE = '#fff';
 export const COLOR_BUTTON_PRIMARY = COLOR_PRIMARY;
 export const COLOR_TITLE = '#0C0D0F';
