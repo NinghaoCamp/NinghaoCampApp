@@ -135,14 +135,14 @@ export default class NewServerView extends LoggedView {
 
 		if (/^(\w|[0-9-_]){3,}$/.test(url)
 			&& /^(htt(ps?)?)|(loca((l)?|(lh)?|(lho)?|(lhos)?|(lhost:?\d*)?)$)/.test(url) === false) {
-			url = `${url}.rocket.chat`;
+			url = `${ url }.rocket.chat`;
 		}
 
 		if (/^(https?:\/\/)?(((\w|[0-9])+(\.(\w|[0-9-_])+)+)|localhost)(:\d+)?$/.test(url)) {
 			if (/^localhost(:\d+)?/.test(url)) {
-				url = `http://${url}`;
+				url = `http://${ url }`;
 			} else if (/^https?:\/\//.test(url) === false) {
-				url = `https://${url}`;
+				url = `https://${ url }`;
 			}
 		}
 
