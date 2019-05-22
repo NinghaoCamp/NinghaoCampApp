@@ -7360,39 +7360,46 @@ exports[`Storyshots Message list 1`] = `
                 onStartShouldSetResponder={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#1f2329",
-                    "borderRadius": 4,
-                    "flex": 1,
-                    "height": 150,
-                    "justifyContent": "center",
-                    "marginBottom": 6,
                     "opacity": 1,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontSize": 54,
-                      },
-                      Object {
-                        "color": "white",
-                      },
-                      Object {
-                        "fontFamily": "custom",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 4,
+                      "flex": 1,
+                      "height": 200,
+                      "justifyContent": "center",
+                      "marginBottom": 6,
+                    }
                   }
                 >
-                  
-                </Text>
+                  View
+                  <Text
+                    allowFontScaling={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 54,
+                        },
+                        Object {
+                          "color": "white",
+                        },
+                        Object {
+                          "fontFamily": "custom",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                </View>
               </View>
               <View
                 style={Object {}}
@@ -7607,39 +7614,46 @@ exports[`Storyshots Message list 1`] = `
                 onStartShouldSetResponder={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#1f2329",
-                    "borderRadius": 4,
-                    "flex": 1,
-                    "height": 150,
-                    "justifyContent": "center",
-                    "marginBottom": 6,
                     "opacity": 1,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontSize": 54,
-                      },
-                      Object {
-                        "color": "white",
-                      },
-                      Object {
-                        "fontFamily": "custom",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      Object {},
-                    ]
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 4,
+                      "flex": 1,
+                      "height": 200,
+                      "justifyContent": "center",
+                      "marginBottom": 6,
+                    }
                   }
                 >
-                  
-                </Text>
+                  View
+                  <Text
+                    allowFontScaling={false}
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 54,
+                        },
+                        Object {
+                          "color": "white",
+                        },
+                        Object {
+                          "fontFamily": "custom",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        Object {},
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
