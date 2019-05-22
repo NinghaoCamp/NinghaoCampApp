@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-	Keyboard, Text, ScrollView, View, StyleSheet, Alert, LayoutAnimation
+	Keyboard, Text, ScrollView, StyleSheet, Alert, LayoutAnimation
 } from 'react-native';
 import { connect } from 'react-redux';
 import { Answers } from 'react-native-fabric';
