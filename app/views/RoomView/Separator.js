@@ -5,7 +5,7 @@ import moment from 'moment';
 
 import I18n from '../../i18n';
 import sharedStyles from '../Styles';
-import { COLOR_DANGER, COLOR_TEXT_DESCRIPTION } from '../../constants/colors';
+import { COLOR_DANGER } from '../../constants/colors';
 
 const styles = StyleSheet.create({
 	container: {
@@ -16,14 +16,14 @@ const styles = StyleSheet.create({
 		marginHorizontal: 14
 	},
 	line: {
-		backgroundColor: COLOR_TEXT_DESCRIPTION,
+		backgroundColor: '#eee',
 		height: 1,
 		flex: 1
 	},
 	text: {
 		fontSize: 14,
 		...sharedStyles.textMedium,
-		...sharedStyles.textColorDescription
+		color: '#CCCCCC'
 	},
 	unreadLine: {
 		backgroundColor: COLOR_DANGER

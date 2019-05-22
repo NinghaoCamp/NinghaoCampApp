@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		lineHeight: 22,
 		...sharedStyles.textColorNormal,
-		...sharedStyles.textMedium
+		...sharedStyles.textMedium,
+		marginBottom: 8
 	},
 	titleContainer: {
 		flex: 1,
