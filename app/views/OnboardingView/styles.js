@@ -64,7 +64,8 @@ export default StyleSheet.create({
 	},
 	buttonTitle: {
 		...sharedStyles.textSemibold,
-		fontSize: 17
+		fontSize: 17,
+		alignSelf: 'center'
 	},
 	buttonSubtitle: {
 		...sharedStyles.textRegular,
@@ -96,7 +97,7 @@ export default StyleSheet.create({
 		color: colors.textColorPrimary
 	},
 	button_text_secondary: {
-		color: colors.textColorSecondary
+		color: '#2B2B2B'
 	},
 	closeModal: {
 		position: 'absolute',

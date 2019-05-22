@@ -18,7 +18,7 @@ import { isIOS, isNotch } from '../../utils/deviceInfo';
 import EventEmitter from '../../utils/events';
 import { CustomIcon } from '../../lib/Icons';
 import StatusBar from '../../containers/StatusBar';
-import { COLOR_PRIMARY, COLOR_WHITE } from '../../constants/colors';
+import { COLOR_PRIMARY } from '../../constants/colors';
 
 @connect(state => ({
 	currentServer: state.server.server,
@@ -143,14 +143,12 @@ export default class OnboardingView extends LoggedView {
 					<Button
 						type='secondary'
 						title={I18n.t('Connect_to_a_server')}
-						icon={<CustomIcon name='permalink' size={30} color={COLOR_PRIMARY} />}
 						onPress={this.connectServer}
 						testID='connect-server-button'
 					/>
 					<Button
 						type='primary'
 						title={I18n.t('Create_a_new_workspace')}
-						icon={<CustomIcon name='plus' size={30} color={COLOR_WHITE} />}
 						onPress={this.createWorkspace}
 						testID='create-workspace-button'
 					/>
