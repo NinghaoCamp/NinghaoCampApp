@@ -15,7 +15,7 @@ export default StyleSheet.create({
 		flexDirection: 'row'
 	},
 	container: {
-		paddingVertical: 4,
+		paddingVertical: 8,
 		width: '100%',
 		paddingHorizontal: 14,
 		flexDirection: 'column'
@@ -109,7 +109,7 @@ export default StyleSheet.create({
 		paddingVertical: 5
 	},
 	buttonContainer: {
-		marginTop: 6,
+		marginTop: 16,
 		flexDirection: 'row',
 		alignItems: 'center'
 	},
@@ -167,7 +167,8 @@ export default StyleSheet.create({
 		minHeight: 200,
 		borderRadius: 4,
 		borderColor: COLOR_BORDER,
-		borderWidth: 1
+		borderWidth: 1,
+		marginBottom: 8
 	},
 	imagePressed: {
 		opacity: 0.5
