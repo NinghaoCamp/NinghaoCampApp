@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-	Text, ScrollView, Keyboard, Image, StyleSheet, TouchableOpacity
+	Text, ScrollView, Keyboard, StyleSheet, TouchableOpacity
 } from 'react-native';
 import { connect } from 'react-redux';
 import { SafeAreaView } from 'react-navigation';
@@ -34,6 +34,9 @@ const styles = StyleSheet.create({
 		letterSpacing: 0,
 		alignSelf: 'center'
 	},
+	mt100: {
+		marginTop: 100
+	},
 	inputContainer: {
 		marginTop: 25,
 		marginBottom: 15
@@ -55,7 +58,7 @@ const styles = StyleSheet.create({
 	}
 });
 
-const defaultServer = 'https://open.rocket.chat';
+const defaultServer = 'https://nnc2019.ninghao.co';
 
 @connect(state => ({
 	connecting: state.server.connecting
@@ -132,14 +135,14 @@ export default class NewServerView extends LoggedView {
 
 		if (/^(\w|[0-9-_]){3,}$/.test(url)
 			&& /^(htt(ps?)?)|(loca((l)?|(lh)?|(lho)?|(lhos)?|(lhost:?\d*)?)$)/.test(url) === false) {
-			url = `${ url }.rocket.chat`;
+			url = `${url}.rocket.chat`;
 		}
 
 		if (/^(https?:\/\/)?(((\w|[0-9])+(\.(\w|[0-9-_])+)+)|localhost)(:\d+)?$/.test(url)) {
 			if (/^localhost(:\d+)?/.test(url)) {
-				url = `http://${ url }`;
+				url = `http://${url}`;
 			} else if (/^https?:\/\//.test(url) === false) {
-				url = `https://${ url }`;
+				url = `https://${url}`;
 			}
 		}
 
@@ -180,8 +183,7 @@ export default class NewServerView extends LoggedView {
 				<StatusBar light />
 				<ScrollView {...scrollPersistTaps} contentContainerStyle={sharedStyles.containerScrollView}>
 					<SafeAreaView style={sharedStyles.container} testID='new-server-view' forceInset={{ bottom: 'never' }}>
-						<Image style={styles.image} source={{ uri: 'new_server' }} />
-						<Text style={styles.title}>{I18n.t('Sign_in_your_server')}</Text>
+						<Text style={[styles.title, styles.mt100]}>{I18n.t('Sign_in_your_server')}</Text>
 						<TextInput
 							inputRef={e => this.input = e}
 							containerStyle={styles.inputContainer}
