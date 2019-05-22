@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-	View, Text, Image, TouchableOpacity, BackHandler
+	View, Image, TouchableOpacity, BackHandler
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
