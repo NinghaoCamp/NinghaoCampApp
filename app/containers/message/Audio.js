@@ -12,7 +12,7 @@ import Touchable from 'react-native-platform-touchable';
 import Markdown from './Markdown';
 import { CustomIcon } from '../../lib/Icons';
 import sharedStyles from '../../views/Styles';
-import { COLOR_BACKGROUND_CONTAINER, COLOR_BORDER, COLOR_PRIMARY } from '../../constants/colors';
+import { COLOR_BACKGROUND_CONTAINER, COLOR_PRIMARY } from '../../constants/colors';
 
 const styles = StyleSheet.create({
 	audioContainer: {
@@ -21,10 +21,8 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		height: 56,
 		backgroundColor: COLOR_BACKGROUND_CONTAINER,
-		borderColor: COLOR_BORDER,
-		borderWidth: 1,
 		borderRadius: 4,
-		marginBottom: 6
+		marginBottom: 16
 	},
 	playPauseButton: {
 		marginHorizontal: 10,

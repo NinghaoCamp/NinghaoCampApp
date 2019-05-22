@@ -37,7 +37,8 @@ export default StyleSheet.create({
 	text: {
 		fontSize: 16,
 		...sharedStyles.textColorNormal,
-		...sharedStyles.textRegular
+		...sharedStyles.textRegular,
+		lineHeight: 24
 	},
 	textInfo: {
 		fontStyle: 'italic',
@@ -167,7 +168,6 @@ export default StyleSheet.create({
 		minHeight: 200,
 		borderRadius: 4,
 		borderColor: COLOR_BORDER,
-		borderWidth: 1,
 		marginBottom: 8
 	},
 	imagePressed: {
@@ -194,10 +194,9 @@ export default StyleSheet.create({
 		...sharedStyles.textRegular,
 		...codeFontFamily,
 		backgroundColor: COLOR_BACKGROUND_CONTAINER,
-		borderColor: COLOR_BORDER,
-		borderWidth: 1,
 		borderRadius: 4,
-		padding: 4
+		padding: 16,
+		paddingBottom: 0
 	},
 	link: {
 		color: COLOR_PRIMARY,
