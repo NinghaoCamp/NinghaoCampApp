@@ -267,15 +267,6 @@ export default class LoginView extends LoggedView {
 					onPress={this.forgotPassword}
 					testID='login-view-forgot-password'
 				/>
-				<View style={styles.bottomContainer}>
-					<Text style={styles.dontHaveAccount}>{I18n.t('Dont_Have_An_Account')}</Text>
-					<Text
-						style={styles.createAccount}
-						onPress={this.register}
-						testID='login-view-register'
-					>{I18n.t('Create_account')}
-					</Text>
-				</View>
 			</SafeAreaView>
 		);
 	}
