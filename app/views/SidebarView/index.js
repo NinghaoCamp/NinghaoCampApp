@@ -50,7 +50,7 @@ export default class Sidebar extends Component {
 	static propTypes = {
 		baseUrl: PropTypes.string,
 		navigation: PropTypes.object,
-		Site_Name: PropTypes.string.isRequired,
+		Site_Name: PropTypes.string,
 		user: PropTypes.object,
 		logout: PropTypes.func.isRequired,
 		activeItemKey: PropTypes.string
