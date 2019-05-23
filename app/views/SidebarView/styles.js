@@ -35,6 +35,11 @@ export default StyleSheet.create({
 		borderColor: COLOR_SEPARATOR,
 		marginVertical: 4
 	},
+	sidebarSeparator: {
+		borderBottomWidth: StyleSheet.hairlineWidth,
+		borderColor: '#2b2b2b',
+		marginVertical: 4
+	},
 	header: {
 		paddingVertical: 16,
 		flexDirection: 'row',

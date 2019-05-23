@@ -23,7 +23,7 @@ import database from '../../lib/realm';
 
 const keyExtractor = item => item.id;
 
-const Separator = React.memo(() => <View style={styles.separator} />);
+const Separator = React.memo(() => <View style={styles.sidebarSeparator} />);
 
 const permissions = [
 	'view-statistics',
