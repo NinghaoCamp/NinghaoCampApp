@@ -6,14 +6,13 @@ import { COLOR_TEXT_DESCRIPTION } from '../constants/colors';
 
 const styles = StyleSheet.create({
 	style: {
-		marginRight: 7
+		marginRight: 7,
 		// marginTop: 3
-		// tintColor: COLOR_TEXT_DESCRIPTION,
-		// color: COLOR_TEXT_DESCRIPTION
+		tintColor: COLOR_TEXT_DESCRIPTION,
+		color: COLOR_TEXT_DESCRIPTION
 	},
 	discussion: {
-		marginRight: 5,
-		color: COLOR_TEXT_DESCRIPTION
+		marginRight: 5
 	}
 });
 
