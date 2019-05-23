@@ -165,7 +165,7 @@ export default {
 	Has_joined_the_channel: '已加入频道',
 	Has_left_the_channel: '已离开频道',
 	I_have_an_account: '我有帐户',
-	Invisible: '看不见的',
+	Invisible: '隐身',
 	Invite: '邀请',
 	is_a_valid_RocketChat_instance: '是一个有效的 NinghaoCamp 实例',
 	is_not_a_valid_RocketChat_instance: '不是有效的 NinghaoCamp 实例',
