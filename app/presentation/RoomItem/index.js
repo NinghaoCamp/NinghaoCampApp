@@ -26,7 +26,7 @@ export default class RoomItem extends React.Component {
 		name: PropTypes.string.isRequired,
 		baseUrl: PropTypes.string.isRequired,
 		showLastMessage: PropTypes.bool,
-		_updatedAt: PropTypes.string,
+		_updatedAt: PropTypes.instanceOf(Date),
 		lastMessage: PropTypes.object,
 		alert: PropTypes.bool,
 		unread: PropTypes.number,
