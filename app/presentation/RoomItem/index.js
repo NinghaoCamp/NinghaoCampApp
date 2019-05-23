@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import 'moment/locale/zh-cn';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
@@ -11,6 +12,8 @@ import styles, { ROW_HEIGHT } from './styles';
 import UnreadBadge from './UnreadBadge';
 import TypeIcon from './TypeIcon';
 import LastMessage from './LastMessage';
+
+moment.locale('zh-cn');
 
 export { ROW_HEIGHT };
 
