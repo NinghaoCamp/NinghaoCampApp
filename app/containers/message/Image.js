@@ -11,6 +11,7 @@ import { formatAttachmentUrl } from '../../lib/utils';
 
 const Button = React.memo(({ children, onPress }) => (
 	<Touchable
+		activeOpacity={0.7}
 		onPress={onPress}
 		style={styles.imageContainer}
 		background={Touchable.Ripple('#fff')}

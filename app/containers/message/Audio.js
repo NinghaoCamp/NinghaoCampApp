@@ -62,6 +62,7 @@ const sliderAnimationConfig = {
 
 const Button = React.memo(({ paused, onPress }) => (
 	<Touchable
+		activeOpacity={0.7}
 		style={styles.playPauseButton}
 		onPress={onPress}
 		hitSlop={BUTTON_HIT_SLOP}

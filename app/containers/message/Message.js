@@ -95,6 +95,7 @@ const MessageTouchable = React.memo((props) => {
 		<Touchable
 			onLongPress={props.onLongPress}
 			onPress={props.onPress}
+			activeOpacity={0.7}
 			disabled={props.isInfo || props.archived || props.isTemp}
 		>
 			<View>

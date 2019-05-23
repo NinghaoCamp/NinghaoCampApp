@@ -59,6 +59,7 @@ const Video = React.memo(({
 	return (
 		<React.Fragment>
 			<Touchable
+				activeOpacity={0.7}
 				onPress={onPress}
 				background={Touchable.Ripple('#fff')}
 			>
