@@ -47,6 +47,7 @@ export default StyleSheet.create({
 	},
 	headerTextContainer: {
 		flex: 1,
+		marginTop: 8,
 		flexDirection: 'column',
 		alignItems: 'flex-start'
 	},
