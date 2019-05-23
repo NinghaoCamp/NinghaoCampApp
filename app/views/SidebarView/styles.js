@@ -63,6 +63,7 @@ export default StyleSheet.create({
 	},
 	headerIcon: {
 		paddingHorizontal: 10,
+		alignSelf: 'flex-end',
 		...sharedStyles.textColorNormal
 	},
 	avatar: {
