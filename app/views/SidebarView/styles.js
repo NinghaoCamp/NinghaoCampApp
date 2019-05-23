@@ -6,7 +6,7 @@ import sharedStyles from '../Styles';
 export default StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#111'
+		backgroundColor: '#030303'
 	},
 	item: {
 		flexDirection: 'row',
