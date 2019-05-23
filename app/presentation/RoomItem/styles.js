@@ -16,7 +16,7 @@ export default StyleSheet.create({
 	},
 	centerContainer: {
 		flex: 1,
-		paddingVertical: 10,
+		paddingVertical: 16,
 		paddingRight: 14,
 		borderBottomWidth: StyleSheet.hairlineWidth,
 		borderColor: COLOR_SEPARATOR
