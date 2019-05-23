@@ -4,7 +4,7 @@ import { View, ViewPropTypes } from 'react-native';
 import FastImage from 'react-native-fast-image';
 
 const Avatar = React.memo(({
-	text, size, baseUrl, borderRadius, style, avatar, type, children, userId, token
+	text, size, baseUrl, borderRadius, style, avatar, type, children, userId, token, prid
 }) => {
 	const avatarStyle = {
 		width: size,
@@ -16,7 +16,18 @@ const Avatar = React.memo(({
 		return null;
 	}
 
-	const room = type === 'd' ? text : `@${ text }`;
+	let room = '';
+
+	if (type === 'd') {
+		room = text;
+	} else if (prid) {
+		room = `D${ text }`;
+	} else {
+		room = `@${ text }`;
+	}
+
+	// const room = type === 'd' ? `D${ text }` : `@${ text }`;
+	// const room = prid ? 'D' : `@${ text }`;
 
 	// Avoid requesting several sizes by having only two sizes on cache
 	const uriSize = size === 100 ? 100 : 50;
@@ -50,6 +61,7 @@ Avatar.propTypes = {
 	baseUrl: PropTypes.string.isRequired,
 	style: ViewPropTypes.style,
 	text: PropTypes.string,
+	prid: PropTypes.string,
 	avatar: PropTypes.string,
 	size: PropTypes.number,
 	borderRadius: PropTypes.number,

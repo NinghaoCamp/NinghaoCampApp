@@ -101,7 +101,7 @@ export default class RoomItem extends React.Component {
 					style={[styles.container, height && { height }]}
 					accessibilityLabel={accessibilityLabel}
 				>
-					<Avatar text={name} size={avatarSize} type={type} baseUrl={baseUrl} style={styles.avatar} userId={userId} token={token} />
+					<Avatar text={name} size={avatarSize} type={type} baseUrl={baseUrl} style={styles.avatar} userId={userId} token={token} prid={prid} />
 					<View style={styles.centerContainer}>
 						<View style={styles.titleContainer}>
 							<TypeIcon type={type} id={id} prid={prid} />
