@@ -6,13 +6,14 @@ import { COLOR_TEXT_DESCRIPTION } from '../constants/colors';
 
 const styles = StyleSheet.create({
 	style: {
-		marginRight: 7,
-		marginTop: 3,
+		marginRight: 7
+		// marginTop: 3
 		// tintColor: COLOR_TEXT_DESCRIPTION,
-		color: COLOR_TEXT_DESCRIPTION
+		// color: COLOR_TEXT_DESCRIPTION
 	},
 	discussion: {
-		marginRight: 6
+		marginRight: 5,
+		color: COLOR_TEXT_DESCRIPTION
 	}
 });
 
@@ -27,9 +28,9 @@ const RoomTypeIcon = React.memo(({ type, size, style }) => {
 	}
 
 	if (type === 'c') {
-		return <Image tintColor={COLOR_TEXT_DESCRIPTION} source={{ uri: 'hashtag' }} style={[styles.style, style, { width: size, height: size }]} />;
+		return <Image source={{ uri: 'hashtag' }} style={[styles.style, style, { width: size, height: size }]} />;
 	}
-	return <Image tintColor={COLOR_TEXT_DESCRIPTION} source={{ uri: 'lock' }} style={[styles.style, style, { width: size, height: size }]} />;
+	return <Image source={{ uri: 'lock' }} style={[styles.style, style, { width: size, height: size }]} />;
 });
 
 RoomTypeIcon.propTypes = {
