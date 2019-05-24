@@ -95,7 +95,8 @@ const FileModal = React.memo(({
 		onBackdropPress={onClose}
 		onBackButtonPress={onClose}
 		onSwipeComplete={onClose}
-		swipeDirection={['up', 'left', 'right', 'down']}
+		backdropOpacity={0.9}
+		// swipeDirection={['up', 'left', 'right', 'down']}
 	>
 		<ModalContent attachment={attachment} onClose={onClose} user={user} baseUrl={baseUrl} />
 	</Modal>
