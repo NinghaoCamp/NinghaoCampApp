@@ -6,13 +6,13 @@ import isEqual from 'deep-equal';
 import Player from 'react-native-video';
 
 import Markdown from './Markdown';
-import openLink from '../../utils/openLink';
-import { isIOS } from '../../utils/deviceInfo';
+// import openLink from '../../utils/openLink';
+// import { isIOS } from '../../utils/deviceInfo';
 import { CustomIcon } from '../../lib/Icons';
 import { formatAttachmentUrl } from '../../lib/utils';
 
-const SUPPORTED_TYPES = ['video/quicktime', 'video/mp4', ...(isIOS ? [] : ['video/webm', 'video/3gp', 'video/mkv'])];
-const isTypeSupported = type => SUPPORTED_TYPES.indexOf(type) !== -1;
+// const SUPPORTED_TYPES = ['video/quicktime', 'video/mp4', ...(isIOS ? [] : ['video/webm', 'video/3gp', 'video/mkv'])];
+// const isTypeSupported = type => SUPPORTED_TYPES.indexOf(type) !== -1;
 
 const styles = StyleSheet.create({
 	button: {
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
 		height: 200,
 		marginBottom: 6,
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		backgroundColor: '#000'
 	},
 	modal: {
 		margin: 0,
@@ -46,13 +47,7 @@ const Video = React.memo(({
 		return null;
 	}
 
-	const onPress = () => {
-		if (isTypeSupported(file.video_type)) {
-			return onOpenFileModal(file);
-		}
-		const uri = formatAttachmentUrl(file.video_url, user.id, user.token, baseUrl);
-		openLink(uri);
-	};
+	const onPress = () => onOpenFileModal(file);
 
 	const uri = formatAttachmentUrl(file.video_url, user.id, user.token, baseUrl);
 

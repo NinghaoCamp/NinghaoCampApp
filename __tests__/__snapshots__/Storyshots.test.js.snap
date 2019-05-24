@@ -7368,6 +7368,7 @@ exports[`Storyshots Message list 1`] = `
                   style={
                     Object {
                       "alignItems": "center",
+                      "backgroundColor": "#000",
                       "borderRadius": 4,
                       "flex": 1,
                       "height": 200,
@@ -7622,6 +7623,7 @@ exports[`Storyshots Message list 1`] = `
                   style={
                     Object {
                       "alignItems": "center",
+                      "backgroundColor": "#000",
                       "borderRadius": 4,
                       "flex": 1,
                       "height": 200,
