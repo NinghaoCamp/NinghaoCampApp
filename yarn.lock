@@ -10418,10 +10418,10 @@ react-native-easy-toast@^1.2.0:
   version "0.5.2"
   resolved "https://codeload.github.com/corymsmith/react-native-fabric/tar.gz/523a4edab3b2bf55ea9eeea2cf0dde82c5c29dd4"
 
-react-native-fast-image@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-5.3.0.tgz#136e045bc6e95e75b03b89a82eefecb984737fda"
-  integrity sha512-pqp9loZbWHW2pVcaAItV5rtEpj6RyPnk0mRlsxRZpbJvrJArJwRMd+WT8BzC+OyTDV1TOdFJCOxDyVNL9I2XTw==
+react-native-fast-image@8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.0.tgz#5821fac5e8759b3a87628600522eb72c579b0b9f"
+  integrity sha512-b0uhUEXKuIWY1WFai30i4LR99kF8OKoOjl6Yqcnc/bydkuE1r7oj0eUNifa7jwD4Pdpeff+uGMrEz27UMap0yQ==
 
 react-native-fit-image@^1.5.2:
   version "1.5.4"
